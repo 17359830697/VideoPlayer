@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Current_Playlist</class>
+ <widget class="QMainWindow" name="Current_Playlist">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>540</width>
+    <height>372</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>540</width>
+    <height>372</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/new/prefix1/src/list.png</normaloff>:/new/prefix1/src/list.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>540</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_S"/>
+   <addaction name="action"/>
+   <addaction name="action_2"/>
+   <addaction name="action_3"/>
+   <addaction name="action_4"/>
+   <addaction name="action_5"/>
+   <addaction name="action_6"/>
+   <addaction name="action_U"/>
+   <addaction name="action_D"/>
+   <addaction name="action_7"/>
+  </widget>
+  <action name="action_S">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/save.png</normaloff>:/new/prefix1/src/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>保存播放列表</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/add.png</normaloff>:/new/prefix1/src/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+   <property name="toolTip">
+    <string>添加...</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/sub.png</normaloff>:/new/prefix1/src/sub.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除...</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/kaishi.png</normaloff>:/new/prefix1/src/kaishi.png</iconset>
+   </property>
+   <property name="text">
+    <string>播放(&amp;P)</string>
+   </property>
+   <property name="toolTip">
+    <string>播放(P)</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/pre.png</normaloff>:/new/prefix1/src/pre.png</iconset>
+   </property>
+   <property name="text">
+    <string>上一个</string>
+   </property>
+   <property name="toolTip">
+    <string>上一个(V)</string>
+   </property>
+   <property name="shortcut">
+    <string>&lt;</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/next.png</normaloff>:/new/prefix1/src/next.png</iconset>
+   </property>
+   <property name="text">
+    <string>下一个</string>
+   </property>
+   <property name="toolTip">
+    <string>下一个(N)</string>
+   </property>
+   <property name="shortcut">
+    <string>&gt;</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/playmode.png</normaloff>:/new/prefix1/src/playmode.png</iconset>
+   </property>
+   <property name="text">
+    <string>播放模式</string>
+   </property>
+   <property name="toolTip">
+    <string>播放模式</string>
+   </property>
+  </action>
+  <action name="action_U">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/up.png</normaloff>:/new/prefix1/src/up.png</iconset>
+   </property>
+   <property name="text">
+    <string>向上移动(&amp;U)</string>
+   </property>
+   <property name="toolTip">
+    <string>向上移动(U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="action_D">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/down.png</normaloff>:/new/prefix1/src/down.png</iconset>
+   </property>
+   <property name="text">
+    <string>向下移动(&amp;D)</string>
+   </property>
+   <property name="toolTip">
+    <string>向下移动(D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/seek.png</normaloff>:/new/prefix1/src/seek.png</iconset>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+   <property name="toolTip">
+    <string>搜索</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

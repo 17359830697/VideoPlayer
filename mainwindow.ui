@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/new/prefix1/src/videoplayer.png</normaloff>:/new/prefix1/src/videoplayer.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="videolayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>53</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));
+background-color: rgb(149, 165, 185);</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>6</number>
+       </property>
+       <item row="0" column="7">
+        <widget class="QSlider" name="slider_volume">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="btn_setbig">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="toolTipDuration">
+          <number>-1</number>
+         </property>
+         <property name="statusTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/src/big.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="btn_start">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/src/kaishi.png);
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btn_back">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/src/backward.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="btn_go">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/src/go.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btn_stop">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/src/stop2.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSlider" name="slider_time">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QPushButton" name="btn_volume">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/src/volumeMiddle.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QWidget" name="widget_state" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>27</height>
+       </size>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_state">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>13</pointsize>
+           <italic>false</italic>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_time">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>13</pointsize>
+           <italic>false</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>0:0:0/0:0:0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_sign">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>834</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>打开(&amp;O)</string>
+    </property>
+    <widget class="QMenu" name="menu_R">
+     <property name="title">
+      <string>最近的文件(&amp;R)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/new/prefix1/src/recently.png</normaloff>:/new/prefix1/src/recently.png</iconset>
+     </property>
+    </widget>
+    <widget class="QMenu" name="menu_A_2">
+     <property name="title">
+      <string>收藏夹(&amp;A)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/new/prefix1/src/collect.png</normaloff>:/new/prefix1/src/collect.png</iconset>
+     </property>
+    </widget>
+    <addaction name="action_F"/>
+    <addaction name="menu_R"/>
+    <addaction name="menu_A_2"/>
+    <addaction name="action_i"/>
+    <addaction name="action_P"/>
+    <addaction name="actionURL_U"/>
+    <addaction name="separator"/>
+    <addaction name="action_L"/>
+   </widget>
+   <widget class="QMenu" name="menu_P">
+    <property name="title">
+     <string>播放(&amp;P)</string>
+    </property>
+    <widget class="QMenu" name="menu_E">
+     <property name="title">
+      <string>速度(&amp;E)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/new/prefix1/src/speed.png</normaloff>:/new/prefix1/src/speed.png</iconset>
+     </property>
+     <addaction name="action_1_0"/>
+     <addaction name="action_0_75"/>
+     <addaction name="action_1_1"/>
+     <addaction name="action_1_25"/>
+     <addaction name="action_1_5"/>
+     <addaction name="action_2_0"/>
+     <addaction name="action_3_0"/>
+    </widget>
+    <widget class="QMenu" name="menuA_B_A">
+     <property name="title">
+      <string>A-B区间(&amp;A)</string>
+     </property>
+     <addaction name="action_A_A"/>
+     <addaction name="action_B_B"/>
+     <addaction name="action_A_B_C"/>
+     <addaction name="separator"/>
+     <addaction name="action_R"/>
+    </widget>
+    <addaction name="action_L_2"/>
+    <addaction name="action_P_3"/>
+    <addaction name="action_S_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_F_3"/>
+    <addaction name="action_m"/>
+    <addaction name="action_10"/>
+    <addaction name="action_11"/>
+    <addaction name="action_1"/>
+    <addaction name="action_4"/>
+    <addaction name="action_12"/>
+    <addaction name="action_13"/>
+    <addaction name="separator"/>
+    <addaction name="menu_E"/>
+    <addaction name="separator"/>
+    <addaction name="menuA_B_A"/>
+    <addaction name="separator"/>
+    <addaction name="action_J"/>
+    <addaction name="separator"/>
+    <addaction name="action_V"/>
+    <addaction name="action_N"/>
+    <addaction name="separator"/>
+    <addaction name="action_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_V">
+    <property name="title">
+     <string>视频(&amp;V)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_A">
+    <property name="title">
+     <string>音频(&amp;A)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>字幕(&amp;S)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_B">
+    <property name="title">
+     <string>浏览(&amp;B)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_w">
+    <property name="title">
+     <string>查看(&amp;w)</string>
+    </property>
+    <addaction name="action_I_2"/>
+    <addaction name="action_L_3"/>
+    <addaction name="action_Y_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_T">
+    <property name="title">
+     <string>选项(&amp;T)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="action_5"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_P"/>
+   <addaction name="menu_V"/>
+   <addaction name="menu_A"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_B"/>
+   <addaction name="menu_w"/>
+   <addaction name="menu_T"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));
+background-color: rgb(149, 165, 185);
+</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_F_2"/>
+   <addaction name="actionURL_U_2"/>
+   <addaction name="action_A_2"/>
+   <addaction name="action_S"/>
+   <addaction name="action_I"/>
+   <addaction name="action_P_2"/>
+   <addaction name="action_Y"/>
+   <addaction name="action"/>
+   <addaction name="action_2"/>
+  </widget>
+  <action name="action_F">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/file.png</normaloff>:/new/prefix1/src/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>文件(&amp;F)...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_i">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/contents.png</normaloff>:/new/prefix1/src/contents.png</iconset>
+   </property>
+   <property name="text">
+    <string>目录(&amp;i)</string>
+   </property>
+  </action>
+  <action name="action_P">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/list.png</normaloff>:/new/prefix1/src/list.png</iconset>
+   </property>
+   <property name="text">
+    <string>播放列表(&amp;P)</string>
+   </property>
+  </action>
+  <action name="action_D">
+   <property name="text">
+    <string>光盘(&amp;D)</string>
+   </property>
+  </action>
+  <action name="actionURL_U">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/url.png</normaloff>:/new/prefix1/src/url.png</iconset>
+   </property>
+   <property name="text">
+    <string>URL(&amp;U)...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="action_O">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/broadcast.png</normaloff>:/new/prefix1/src/broadcast.png</iconset>
+   </property>
+   <property name="text">
+    <string>广播(&amp;O)</string>
+   </property>
+  </action>
+  <action name="action_L">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/close.png</normaloff>:/new/prefix1/src/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭(&amp;L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_Q">
+   <property name="text">
+    <string>退出(&amp;Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_F_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/file.png</normaloff>:/new/prefix1/src/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>文件(&amp;F)</string>
+   </property>
+   <property name="toolTip">
+    <string>文件(F)...(Ctrl+F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionURL_U_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/url.png</normaloff>:/new/prefix1/src/url.png</iconset>
+   </property>
+   <property name="text">
+    <string>URL(&amp;U)</string>
+   </property>
+   <property name="toolTip">
+    <string>URL(U)...(Ctrl+U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="action_A_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/collect.png</normaloff>:/new/prefix1/src/collect.png</iconset>
+   </property>
+   <property name="text">
+    <string>收藏夹(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>收藏夹(A)</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/creama.png</normaloff>:/new/prefix1/src/creama.png</iconset>
+   </property>
+   <property name="text">
+    <string>截屏(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>屏幕截图(S)</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="action_I">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/message.png</normaloff>:/new/prefix1/src/message.png</iconset>
+   </property>
+   <property name="text">
+    <string>信息和属性(I)</string>
+   </property>
+   <property name="toolTip">
+    <string>信息和属性(I)...(Ctrl+I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_P_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/list.png</normaloff>:/new/prefix1/src/list.png</iconset>
+   </property>
+   <property name="text">
+    <string>播放列表(P)</string>
+   </property>
+   <property name="toolTip">
+    <string>播放列表(P)...(Ctrl+L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="action_Y">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/ie.png</normaloff>:/new/prefix1/src/ie.png</iconset>
+   </property>
+   <property name="text">
+    <string>浏览器(Y)</string>
+   </property>
+   <property name="toolTip">
+    <string>浏览器(Y)...(F11)</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/pre.png</normaloff>:/new/prefix1/src/pre.png</iconset>
+   </property>
+   <property name="text">
+    <string>上一个</string>
+   </property>
+   <property name="toolTip">
+    <string>上一个(V)...(&lt;)</string>
+   </property>
+   <property name="shortcut">
+    <string>&lt;</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/next.png</normaloff>:/new/prefix1/src/next.png</iconset>
+   </property>
+   <property name="text">
+    <string>下一个</string>
+   </property>
+   <property name="toolTip">
+    <string>下一个(N)...(&gt;)</string>
+   </property>
+   <property name="shortcut">
+    <string>&gt;</string>
+   </property>
+  </action>
+  <action name="action_L_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/kaishi.png</normaloff>:/new/prefix1/src/kaishi.png</iconset>
+   </property>
+   <property name="text">
+    <string>播放(&amp;L)</string>
+   </property>
+  </action>
+  <action name="action_P_3">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/zanting.png</normaloff>:/new/prefix1/src/zanting.png</iconset>
+   </property>
+   <property name="text">
+    <string>暂停(&amp;P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="action_S_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/stop2.png</normaloff>:/new/prefix1/src/stop2.png</iconset>
+   </property>
+   <property name="text">
+    <string>停止(&amp;S)</string>
+   </property>
+  </action>
+  <action name="action_F_3">
+   <property name="text">
+    <string>逐帧步进(&amp;F)</string>
+   </property>
+   <property name="shortcut">
+    <string>.</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/backward.png</normaloff>:/new/prefix1/src/backward.png</iconset>
+   </property>
+   <property name="text">
+    <string>-10秒</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/go.png</normaloff>:/new/prefix1/src/go.png</iconset>
+   </property>
+   <property name="text">
+    <string>+10秒</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="action_1">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/backward.png</normaloff>:/new/prefix1/src/backward.png</iconset>
+   </property>
+   <property name="text">
+    <string>-1分</string>
+   </property>
+   <property name="shortcut">
+    <string>Up</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/go.png</normaloff>:/new/prefix1/src/go.png</iconset>
+   </property>
+   <property name="text">
+    <string>+1分</string>
+   </property>
+   <property name="shortcut">
+    <string>Down</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/backward.png</normaloff>:/new/prefix1/src/backward.png</iconset>
+   </property>
+   <property name="text">
+    <string>-10分</string>
+   </property>
+   <property name="shortcut">
+    <string>PgDown</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/go.png</normaloff>:/new/prefix1/src/go.png</iconset>
+   </property>
+   <property name="text">
+    <string>+10分</string>
+   </property>
+   <property name="shortcut">
+    <string>PgUp</string>
+   </property>
+  </action>
+  <action name="action_J">
+   <property name="text">
+    <string>跳转到(&amp;J)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="action_V">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/pre.png</normaloff>:/new/prefix1/src/pre.png</iconset>
+   </property>
+   <property name="text">
+    <string>上一个(&amp;V)</string>
+   </property>
+   <property name="shortcut">
+    <string>&lt;</string>
+   </property>
+  </action>
+  <action name="action_N">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/next.png</normaloff>:/new/prefix1/src/next.png</iconset>
+   </property>
+   <property name="text">
+    <string>下一个(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>&gt;</string>
+   </property>
+  </action>
+  <action name="action_I_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/message.png</normaloff>:/new/prefix1/src/message.png</iconset>
+   </property>
+   <property name="text">
+    <string>信息和属性(&amp;I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_L_3">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/list.png</normaloff>:/new/prefix1/src/list.png</iconset>
+   </property>
+   <property name="text">
+    <string>播放列表(&amp;P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="action_Y_2">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/src/ie.png</normaloff>:/new/prefix1/src/ie.png</iconset>
+   </property>
+   <property name="text">
+    <string>浏览器(&amp;Y)</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="action_1_0">
+   <property name="text">
+    <string>×0.5</string>
+   </property>
+  </action>
+  <action name="action_0_75">
+   <property name="text">
+    <string>×0.75</string>
+   </property>
+  </action>
+  <action name="action_1_1">
+   <property name="text">
+    <string>×1.0</string>
+   </property>
+  </action>
+  <action name="action_1_25">
+   <property name="text">
+    <string>×1.25</string>
+   </property>
+  </action>
+  <action name="action_1_5">
+   <property name="text">
+    <string>×1.5</string>
+   </property>
+  </action>
+  <action name="action_2_0">
+   <property name="text">
+    <string>×2.0</string>
+   </property>
+  </action>
+  <action name="action_3_0">
+   <property name="text">
+    <string>×3.0</string>
+   </property>
+  </action>
+  <action name="action_m">
+   <property name="text">
+    <string>逐帧步退(&amp;m)</string>
+   </property>
+   <property name="shortcut">
+    <string>,</string>
+   </property>
+  </action>
+  <action name="action_A_A">
+   <property name="text">
+    <string>设置A标记(&amp;A)</string>
+   </property>
+  </action>
+  <action name="action_B_B">
+   <property name="text">
+    <string>设置B标记(&amp;B)</string>
+   </property>
+  </action>
+  <action name="action_A_B_C">
+   <property name="text">
+    <string>清除A-B标记(&amp;C)</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="text">
+    <string>重复(&amp;R)</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>倒放</string>
+   </property>
+   <property name="toolTip">
+    <string>倒放</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>帮助说明(H)</string>
+   </property>
+   <property name="toolTip">
+    <string>说明...</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+H</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>src/collect.png</file>
+        <file>src/file.png</file>
+        <file>src/url.png</file>
+        <file>src/videoplayer.png</file>
+        <file>src/clear.png</file>
+        <file>src/backward.png</file>
+        <file>src/big.png</file>
+        <file>src/go.png</file>
+        <file>src/kaishi.png</file>
+        <file>src/stop.png</file>
+        <file>src/volumeCross.png</file>
+        <file>src/volumeHigh.png</file>
+        <file>src/volumeLow.png</file>
+        <file>src/volumeMiddle.png</file>
+        <file>src/zanting.png</file>
+        <file>src/stop1.png</file>
+        <file>src/stop2.png</file>
+        <file>src/close.png</file>
+        <file>src/creama.png</file>
+        <file>src/message.png</file>
+        <file>src/ie.png</file>
+        <file>src/list.png</file>
+        <file>src/next.png</file>
+        <file>src/pre.png</file>
+        <file>src/broadcast.png</file>
+        <file>src/contents.png</file>
+        <file>src/recently.png</file>
+        <file>src/television.png</file>
+        <file>src/clearrece.png</file>
+        <file>src/save.png</file>
+        <file>src/down.png</file>
+        <file>src/playmode.png</file>
+        <file>src/seek.png</file>
+        <file>src/up.png</file>
+        <file>src/add.png</file>
+        <file>src/sub.png</file>
+        <file>src/addfile.png</file>
+        <file>src/addone.png</file>
+        <file>src/deleteall.png</file>
+        <file>src/speed.png</file>
+    </qresource>
+</RCC>
